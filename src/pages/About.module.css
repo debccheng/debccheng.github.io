@@ -1,0 +1,196 @@
+h1, h2, p {
+  margin: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 5px 0 0 0;
+  font-size: 18px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: black;
+}
+
+p {
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  margin: 5px 20px 0 20px;
+  justify-content: center;
+}
+
+.about {
+  flex: 3;
+  margin: 5px 5px 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContainer {
+  height: 100%;
+  display: flex;
+  flex: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMedia {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 7px 10px 7px 5px;
+  min-width: 120px;
+  min-height: 120px;
+  max-width: 240px;
+  max-height: auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0 0 0;
+  padding: 2px 0;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+}
+
+.links a:focus, .links a:active {
+  outline: 3px solid #b3d;
+}
+
+.links a:visited {
+  color: #000;
+}
+
+.links a >svg {
+  height: 28px;
+  width: 28px;
+  fill: black;
+}
+
+.links a:hover >svg, .links a:focus >svg {
+  fill: #b3d;
+}
+
+.profileImg {
+  height: auto;
+  width: 100%;
+  max-width: 240px;
+}
+
+.aboutHeading {
+  margin-left: 2px;
+}
+
+.aboutText {
+  box-sizing: border-box;
+  padding: 7px 0;
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: scroll;
+}
+
+.skillBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.skillsets {
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skillContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  background-color: #000;
+  color: white;
+}
+
+.subtitle {
+  box-sizing: border-box;
+  padding: 3px 5px;
+  flex: 5%;
+  height: 20px;
+  background-color: #deb;
+}
+
+.iconGroup {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px 2px;
+  flex: 95%;
+}
+
+.iconGroup>svg {
+  margin: 0 3px;
+  fill: #fff;
+}
+
+/* Underline From Center */
+.underlineFromCenter {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.underlineFromCenter:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #b3d;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underlineFromCenter:hover:before, .underlineFromCenter:focus:before, .underlineFromCenter:active:before {
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 675px) {
+  .wrapper {
+    flex-direction: column;
+    height: 100%;
+  }
+}
