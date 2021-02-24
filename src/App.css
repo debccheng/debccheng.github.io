@@ -184,3 +184,10 @@ button:hover {
   background-color: #deb;
   color: black;
 }
+
+@media screen and (max-width: 580px) {
+  .title-text {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+}
