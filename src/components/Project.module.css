@@ -1,7 +1,14 @@
 .heading {
   text-transform: uppercase;
-  margin: 5px 0 0 0;
+  margin: 3px 0 3px 10px;
   font-size: 18px;
+}
+
+.title {
+  display: flex;
+  background-color: black;
+  margin: 0;
+  color: white;
 }
 
 .subheading {
@@ -11,7 +18,12 @@
   margin: 12px 0;
 }
 
-.box {
+.wrapper {
+  margin: 15px 0;
+  border: 1px solid black;
+}
+
+.mainContainer {
   display: flex;
 }
 
@@ -32,9 +44,13 @@
   display: flex;
   flex-direction: column;
   flex: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-sizing: border-box;
   padding: 7px;
+}
+
+.previewContainer {
+  justify-content: flex-end;
 }
 
 .media {
@@ -158,8 +174,17 @@ svg {
 }
 
 .previewContainer>img {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: block;
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  min-height: 195px;
+  min-width: 320px;
+  height: 200px;
+  width: 380px;
+  max-height: 200px;
+  max-width: 380px;
+  margin: 2px 0;
 }
 
 .projectPreview {
@@ -167,6 +192,7 @@ svg {
   display: flex;
   flex-direction: column;
   margin: 5px 2.5px;
+  /* border: 1px solid salmon; */
 }
 
 /* Shutter Out Vertical */
@@ -215,4 +241,59 @@ svg {
 .shutterOutVertical:hover:before, .shutterOutVertical:focus:before, .shutterOutVertical:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    margin: 15px 300px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper {
+    margin: 15px 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    margin: 15px 80px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .wrapper {
+    margin: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    margin: 15px 0;
+  }
+  .mainContainer {
+    flex-direction: column-reverse;
+  }
+  .flip {
+    flex-direction: column-reverse;
+  }
+  .projectPreview >h1 {
+    display: none;
+  }
+  .previewContainer>img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    margin: 15px 0;
+  }
+  .previewContainer>img {
+    min-height: 195px;
+    min-width: 200px;
+  }
 }

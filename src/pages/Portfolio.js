@@ -1,33 +1,76 @@
+/* eslint-disable no-multi-str */
 import React from 'react';
 import styles from './Portfolio.module.css';
 import Project from '../components/Project';
 import {
   CssThree,
+  Cypress,
   Html5,
+  Jest,
+  MaterialUi,
+  Reactrouter,
   ReactJs
 } from '@icons-pack/react-simple-icons';
-import img from '../assets/projects/colour_contrast_checker.png';
+import ccCheckerImg from '../assets/projects/colour_contrast_checker.png';
+import bigBrainImg1 from '../assets/projects/bigbrain1.png';
+import bigBrainImg2 from '../assets/projects/bigbrain2.png';
+import react2048Img from '../assets/projects/react2048.png';
 
 const Portfolio = () => {
   const colourContrastChecker = {
     title: 'Colour Contrast Checker',
-    description: 
-    'This is a simple web app that changes background and foreground colours through either hex \
+    date: 'Dec 2020',
+    description:
+      'This is a simple web app that changes background and foreground colours through either hex \
     input or colour picker. It also calculates the contrast ratio to assess whether the colour \
     combination is accessible according to W3C specs. Built with React hooks.',
     tech: <><ReactJs /><Html5 /><CssThree /></>,
-    previewTitle: 'Preview',
-    preview: img,
+    preview: [ccCheckerImg],
     repo: 'https://github.com/debccheng/contrast-checker',
     demo: 'https://debccheng.github.io/contrast-checker/',
   };
 
+  const bigBrain = {
+    title: 'Big Brain',
+    date: 'November 2020',
+    description:
+      'A responsive web-based quiz platform modelled off Kahoot. This is pair work assignment \
+    for COMP6080 at UNSW and heavily relies on React hooks, fetch APIs and Material-UI. For \
+    this project I implemented dynamic and auto-submitting forms with Formik, created public, \
+    private and unique routes with React Router DOM. I was also responsible for building \
+    reusable React components that are unit tested with Enzyme/Jest. The project was tested \
+    with Cypress.',
+    tech:
+      <>
+        <ReactJs />
+        <Html5 />
+        <CssThree />
+        <MaterialUi />
+        <Reactrouter />
+        <Jest />
+        <Cypress />
+      </>,
+    preview: [bigBrainImg1, bigBrainImg2],
+    repo: 'https://github.com/debccheng/big-brain'
+  };
+
   const react2048 = {
-    
-  }
+    title: 'React 2048',
+    date: 'Sep 2020',
+    description:
+      'A 2048 game which was built initially with vanilla Javascript and then with React for \
+    learning purposes. This is the React version.',
+    tech: <><ReactJs /><Html5 /><CssThree /></>,
+    preview: [react2048Img],
+    repo: 'https://github.com/debccheng/react2048',
+    demo: 'https://debccheng.com/react2048/',
+  };
+
   return (
     <div className={styles.wrapper}>
-     <Project data={colourContrastChecker} flip={false}/>
+      <Project data={colourContrastChecker} flip={false} />
+      <Project data={bigBrain} flip={true} />
+      <Project data={react2048} flip={false} />
     </div>
   );
 }

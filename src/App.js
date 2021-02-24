@@ -9,6 +9,7 @@ function App() {
     const elementId = e.target.id;
     setcurrentPage(elementId);
   }
+
   return (
     <div className="App">
       <header>
