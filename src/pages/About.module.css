@@ -41,6 +41,7 @@ p {
   align-items: flex-start;
   justify-content: center;
   align-items: center;
+  min-width: 350px;
 }
 
 .aboutMedia {
@@ -126,6 +127,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-height: 250px;
 }
 
 .skillContainer {
@@ -188,9 +190,35 @@ p {
   right: 0;
 }
 
-@media (max-width: 675px) {
+@media screen and (max-width: 675px) {
   .wrapper {
     flex-direction: column;
     height: 100%;
   }
+@media screen and (max-width: 550px) {
+  .aboutMedia {
+    display: none;
+  }
+  .about {
+    margin: 0;
+  }
+  .wrapper {
+    margin: 3px;
+  }
+  .aboutContainer {
+    width: 100%;
+    margin: 0;
+    flex: 50%;
+  }
+  .aboutText {
+    max-height: min-content;
+    height: min-content;
+  }
+  .skillBox {
+    flex: 50%;
+  }
+  .skillsets {
+    justify-content: flex-start;
+  }
+}
 }
