@@ -60,15 +60,22 @@ const About = () => {
           </div>
           <div className={styles.aboutText}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor tincidunt augue,
-              eget posuere nunc imperdiet ut. Nunc malesuada, ex dignissim interdum iaculis, risus orci dictum
-              ligula, a egestas neque risus euismod ipsum. Aenean in est at justo pharetra placerat at sit amet
-              purus. Sed iaculis dolor ac enim imperdiet, id hendrerit justo ultrices. Proin imperdiet velit sed
-              purus hendrerit, et placerat arcu faucibus. Aliquam aliquet dolor mattis tristique finibus. In
-              in tempus mauris. Vestibulum porttitor fermentum tempor. Quisque interdum ultrices sem in aliquam.
-              Nullam sit amet nisl a turpis iaculis tempor tincidunt eget erat. Maecenas mollis leo id tellus
-              aliquam, id fringilla tortor accumsan. Sed eu eros lacus. In eget tellus erat. In hac habitasse
-              platea dictumst. Fusce lacinia.
+              Hi, I'm Deb and I'm a pharmacist. Despite my healthcare background, I've always
+              had a bit of artistic flair and loved making things, ranging widely from
+              assembling Pokemon Nanoblocks to drawing illustrations for an imaginary storyline.
+              I enjoy spending time perfecting each of my little endeavours and sharing the
+              result with others in the end, so it's not surprising I became quite enthusiastic
+              when I discovered webdev.
+            </p>
+            <p>
+              I self-learned Javascript and Typescript before finally completing Graduate
+              Certificate in Computing at UNSW, Sydney in Dec 2020. Even now I'm still
+              constantly learning new things about frontend through personal projects.
+            </p>
+            <p>
+              On my days off when I'm not coding you'll likely find me drawing, jogging, 
+              travelling for a cup of good coffee or be on the hunt for the best
+              shakshouka in town.
             </p>
           </div>
         </div>
