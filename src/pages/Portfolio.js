@@ -9,11 +9,13 @@ import {
   Jest,
   MaterialUi,
   Reactrouter,
-  ReactJs
+  ReactJs,
+  Javascript
 } from '@icons-pack/react-simple-icons';
 import ccCheckerImg from '../assets/projects/colour_contrast_checker.png';
 import bigBrainImg1 from '../assets/projects/bigbrain1.png';
 import bigBrainImg2 from '../assets/projects/bigbrain2.png';
+import quickpic from '../assets/projects/quickpic.jpg';
 import react2048Img from '../assets/projects/react2048.png';
 
 const Portfolio = () => {
@@ -32,11 +34,11 @@ const Portfolio = () => {
 
   const bigBrain = {
     title: 'Big Brain',
-    date: 'November 2020',
+    date: 'Nov 2020',
     description:
-      'A responsive web-based quiz platform modelled off Kahoot. This is pair work assignment \
-    for COMP6080 at UNSW and heavily relies on React hooks, fetch APIs and Material-UI. For \
-    this project I implemented dynamic and auto-submitting forms with Formik, created public, \
+      'A responsive web-based quiz platform modelled off Kahoot. This is pair work, 3-week \
+    assignment for COMP6080 at UNSW and heavily relies on React hooks, fetch APIs and Material-UI. \
+    For this project I implemented dynamic and auto-submitting forms with Formik, created public, \
     private and unique routes with React Router DOM. I was also responsible for building \
     reusable React components that are unit tested with Enzyme/Jest. The project was tested \
     with Cypress.',
@@ -54,6 +56,19 @@ const Portfolio = () => {
     repo: 'https://github.com/debccheng/big-brain'
   };
 
+  const quickPic = {
+    title: 'QuickPic',
+    date: 'Oct 2020',
+    description: 
+    ' A responsive SPA based on Instagram built using fetch API and DOM manipulation with Vanilla JS, \
+    without any external library. Functionalities implemented include: signup, login, post, edit, \
+    comment and like. Extra features include infinite scroll and live updates. This is an individual \
+    assignment for COMP6080 at UNSW.',
+    tech: <><Javascript /><Html5 /><CssThree /></>,
+    preview: [quickpic],
+    repo: 'https://github.com/debccheng/quickpic',
+  }
+
   const react2048 = {
     title: 'React 2048',
     date: 'Sep 2020',
@@ -70,7 +85,8 @@ const Portfolio = () => {
     <div className={styles.wrapper}>
       <Project data={colourContrastChecker} flip={false} />
       <Project data={bigBrain} flip={true} />
-      <Project data={react2048} flip={false} />
+      <Project data={quickPic} flip={false} />
+      <Project data={react2048} flip={true} />
     </div>
   );
 }
