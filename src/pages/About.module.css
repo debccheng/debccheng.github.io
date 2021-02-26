@@ -115,6 +115,10 @@ p {
   overflow: auto;
 }
 
+.aboutText >p {
+  margin-bottom: 16px;
+}
+
 .skillBox {
   flex: 1;
   display: flex;
