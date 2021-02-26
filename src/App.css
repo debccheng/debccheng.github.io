@@ -83,7 +83,7 @@ button:hover {
 }
 
 .nav-button:focus {
-  outline: 3px dotted white;
+  outline: none;
   background-color: #deb;
   color: #000;
 }
