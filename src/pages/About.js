@@ -46,7 +46,7 @@ const About = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Github tabIndex="-" />
+                <Github tabIndex="-1" />
               </a>
               <a
                 className={styles.underlineFromCenter}
