@@ -21,10 +21,13 @@
 .wrapper {
   margin: 15px 0;
   border: 1px solid black;
+  /* height: auto; */
 }
 
 .mainContainer {
   display: flex;
+  /* height: auto; */
+  /* border: 5px solid slateblue; */
 }
 
 .flip {
@@ -57,8 +60,8 @@
   width: 100%;
   height: 100%;
   border: 1px solid black;
-  /* min-height: 195px;
-  min-width: 320px; */
+  min-height: 195px;
+  min-width: 320px;
   /* height: 200px;
   width: 380px; */
   margin: 2px 0;
