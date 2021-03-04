@@ -27,7 +27,6 @@ header {
 
 main {
   flex: auto;
-  overflow-y: auto;
   margin: 0;
   color: black;
   background-color: #deb;
