@@ -4,7 +4,7 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 
 function App() {
-  const [currentPage, setcurrentPage] = useState("");
+  const [currentPage, setcurrentPage] = useState("about");
   const handleClick = (e) => {
     const elementId = e.target.id;
     setcurrentPage(elementId);
@@ -40,18 +40,6 @@ function App() {
                 onClick={(e) => handleClick(e)}
               >
                 Portfolio
-              </button>
-            </ul>
-            <ul>
-              <button
-                className={
-                  `nav-button hvr-shutter-out-vertical
-                  ${currentPage === "contact" ? "currentPage" : null}`
-                }
-                id="contact"
-                onClick={(e) => handleClick(e)}
-              >
-                Contact
               </button>
             </ul>
           </li>
