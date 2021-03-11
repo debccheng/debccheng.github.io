@@ -60,8 +60,8 @@ const About = () => {
           </div>
           <div className={styles.aboutText}>
             <p>
-              Hi, I'm Deb and I'm a pharmacist. Despite my healthcare background, I've always
-              had a bit of artistic flair and loved making things, ranging widely from
+              Hi, I'm Deb and I'm a pharmacist. Despite coming from a healthcare background,
+              I've always had a bit of artistic flair and loved making things, ranging widely from
               assembling Pokemon Nanoblocks to drawing illustrations for an imaginary storyline.
               I enjoy spending time perfecting each of my little endeavours and sharing the
               result with others in the end, so it's not surprising I became quite enthusiastic
