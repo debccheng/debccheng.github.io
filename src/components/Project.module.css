@@ -30,6 +30,11 @@
   /* border: 5px solid slateblue; */
 }
 
+.mainContainer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .flip {
   flex-direction: row-reverse;
 }

@@ -10,15 +10,32 @@ import {
   MaterialUi,
   Reactrouter,
   ReactJs,
-  Javascript
+  Javascript,
+  Typescript
 } from '@icons-pack/react-simple-icons';
 import ccCheckerImg from '../assets/projects/colour_contrast_checker.png';
 import bigBrainImg1 from '../assets/projects/bigbrain1.png';
 import bigBrainImg2 from '../assets/projects/bigbrain2.png';
 import quickpic from '../assets/projects/quickpic.jpg';
 import react2048Img from '../assets/projects/react2048.png';
+import boopACatImg from '../assets/projects/boopacat.png';
 
 const Portfolio = () => {
+  const boopACat = {
+    title: 'Boop a Cat',
+    date: 'Mar 2021',
+    description:
+      'A whack-a-mole inspired game coded with Typescript, where I further learned \
+      to use advance React hooks such as useReducer and useCallback. The game \
+      maintains its aspect ratio regardless of screen size, and is animated with css. \
+      Record of highscore is stored in LocalStorage. Playable on Chrome, Firefox and \
+      Safari. All images used in game were illustrated by me with Procreate.',
+      tech: <><Typescript/><ReactJs /><Html5 /><CssThree /></>,
+      preview: [boopACatImg],
+      repo: 'https://github.com/debccheng/boop-a-cat',
+      demo: 'https://debccheng.com/boop-a-cat/',
+  };
+
   const colourContrastChecker = {
     title: 'Colour Contrast Checker',
     date: 'Dec 2020',
@@ -83,6 +100,7 @@ const Portfolio = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Project data={boopACat} flip={true} />
       <Project data={colourContrastChecker} flip={false} />
       <Project data={bigBrain} flip={true} />
       <Project data={quickPic} flip={false} />
