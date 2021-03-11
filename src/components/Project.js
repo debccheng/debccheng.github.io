@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
-import {
-  Github
-} from '@icons-pack/react-simple-icons';
+import React from 'react';
 import styles from './Project.module.css';
+import ProjectButton from './ProjectButton';
+import Technology from './Technology'
 
 const Project = (props) => {
-  const [showIcons, setShowIcons] = useState(true);
-  const showTech = () => {
-    setShowIcons(!showIcons);
-  }
 
   const title = props.data.title;
   const date = props.data.date;
@@ -33,45 +28,16 @@ const Project = (props) => {
             <div className={styles.media}>
               {
                 demo &&
-                <a
-                  className={`${styles.shutterOutVertical} ${styles.mediaLink}`}
-                  href={demo}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span>&#10024;</span>Demo
-                </a>
+                <ProjectButton url={demo} isRepo={false} />
               }
-              <a
-                className={`${styles.shutterOutVertical} ${styles.mediaLink}`}
-                href={repo}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Github />Repo
-            </a>
-              <div className={styles.techWrapper}>
-                <div
-                  className={`${styles.tech} ${showIcons ? `${styles.showIcons}` : `${styles.hideIcons}`}`}
-                  tabIndex="-1"
-                >
-                  <button
-                    className={styles.techButton}
-                    onClick={showTech}
-                  >
-                    Tech
-              </button>
-                  <div className={styles.iconGroup}>
-                    {techIcons}
-                  </div>
-                </div>
-              </div>
+              <ProjectButton url={repo} isRepo={true} />
+              <Technology techIcons={techIcons}/>
             </div>
           </div>
         </div>
         <div className={styles.projectPreview}>
           <div className={styles.previewContainer}>
-            {preview.map((img, i) => <img src={img} alt={`${title} preview ${i + 1}`} key={i} />)}
+            {preview.map((img, i) => <img className={styles.image} src={img} alt={`${title} preview ${i + 1}`} key={i} />)}
           </div>
         </div>
       </div>
