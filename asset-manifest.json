@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1656dcb.chunk.css",
-    "main.js": "/static/js/main.15bd7a4f.chunk.js",
-    "main.js.map": "/static/js/main.15bd7a4f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0f8b90fe.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0f8b90fe.js.map",
-    "static/js/2.db1f3372.chunk.js": "/static/js/2.db1f3372.chunk.js",
-    "static/js/2.db1f3372.chunk.js.map": "/static/js/2.db1f3372.chunk.js.map",
-    "static/js/3.d5d0e8a2.chunk.js": "/static/js/3.d5d0e8a2.chunk.js",
-    "static/js/3.d5d0e8a2.chunk.js.map": "/static/js/3.d5d0e8a2.chunk.js.map",
+    "main.css": "/static/css/main.c282f21f.chunk.css",
+    "main.js": "/static/js/main.046fbaa5.chunk.js",
+    "main.js.map": "/static/js/main.046fbaa5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a4cc4886.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a4cc4886.js.map",
+    "static/js/2.c056abb4.chunk.js": "/static/js/2.c056abb4.chunk.js",
+    "static/js/2.c056abb4.chunk.js.map": "/static/js/2.c056abb4.chunk.js.map",
+    "static/js/3.a4ff9fee.chunk.js": "/static/js/3.a4ff9fee.chunk.js",
+    "static/js/3.a4ff9fee.chunk.js.map": "/static/js/3.a4ff9fee.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b1656dcb.chunk.css.map": "/static/css/main.b1656dcb.chunk.css.map",
-    "static/js/2.db1f3372.chunk.js.LICENSE.txt": "/static/js/2.db1f3372.chunk.js.LICENSE.txt",
+    "static/css/main.c282f21f.chunk.css.map": "/static/css/main.c282f21f.chunk.css.map",
+    "static/js/2.c056abb4.chunk.js.LICENSE.txt": "/static/js/2.c056abb4.chunk.js.LICENSE.txt",
     "static/media/bigbrain1.1442ffbb.png": "/static/media/bigbrain1.1442ffbb.png",
     "static/media/bigbrain2.daa8fa45.png": "/static/media/bigbrain2.daa8fa45.png",
-    "static/media/boopacat.3caac44c.png": "/static/media/boopacat.3caac44c.png",
+    "static/media/boopacat_preview.61fef494.png": "/static/media/boopacat_preview.61fef494.png",
     "static/media/colour_contrast_checker.1ab44c87.png": "/static/media/colour_contrast_checker.1ab44c87.png",
     "static/media/quickpic.7fb478c5.jpg": "/static/media/quickpic.7fb478c5.jpg",
-    "static/media/react2048.73e6284d.png": "/static/media/react2048.73e6284d.png"
+    "static/media/react2048_preview.9ae47663.png": "/static/media/react2048_preview.9ae47663.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0f8b90fe.js",
-    "static/js/2.db1f3372.chunk.js",
-    "static/css/main.b1656dcb.chunk.css",
-    "static/js/main.15bd7a4f.chunk.js"
+    "static/js/runtime-main.a4cc4886.js",
+    "static/js/2.c056abb4.chunk.js",
+    "static/css/main.c282f21f.chunk.css",
+    "static/js/main.046fbaa5.chunk.js"
   ]
 }
