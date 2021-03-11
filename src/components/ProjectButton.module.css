@@ -19,6 +19,7 @@
 
 .mediaLink>svg {
   fill: black;
+  margin: 0 2px;
 }
 
 .mediaLink:hover>svg, .mediaLink:focus>svg {
