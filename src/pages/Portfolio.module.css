@@ -2,6 +2,12 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  margin: 5px 20px 0 20px;
+  margin-top: 70px;
   justify-content: center;
+}
+
+@media screen and (max-width: 675px) {
+  .wrapper {
+    margin-top: 0;
+  }
 }

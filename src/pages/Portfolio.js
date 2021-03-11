@@ -17,8 +17,8 @@ import ccCheckerImg from '../assets/projects/colour_contrast_checker.png';
 import bigBrainImg1 from '../assets/projects/bigbrain1.png';
 import bigBrainImg2 from '../assets/projects/bigbrain2.png';
 import quickpic from '../assets/projects/quickpic.jpg';
-import react2048Img from '../assets/projects/react2048.png';
-import boopACatImg from '../assets/projects/boopacat.png';
+import react2048Img from '../assets/projects/previews/react2048_preview.png';
+import boopACatImg from '../assets/projects/previews/boopacat_preview.png';
 
 const Portfolio = () => {
   const boopACat = {
@@ -105,6 +105,14 @@ const Portfolio = () => {
       <Project data={bigBrain} flip={true} />
       <Project data={quickPic} flip={false} />
       <Project data={react2048} flip={true} />
+
+      {/* {
+        Object.keys(projects)
+          .sort((a, b) => b - a)
+          .map((i) => {
+            return <div key={i}><ProjectCard data={projects[i]} key={i} /></div>
+          })
+      } */}
     </div>
   );
 }
