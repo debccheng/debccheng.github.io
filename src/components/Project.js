@@ -1,7 +1,9 @@
 import React from 'react';
+import Lazyload from 'react-lazyload';
 import styles from './Project.module.css';
 import ProjectButton from './ProjectButton';
 import Technology from './Technology'
+import Placeholder from './Placeholder';
 
 const Project = (props) => {
 
@@ -36,9 +38,15 @@ const Project = (props) => {
           </div>
         </div>
         <div className={styles.projectPreview}>
-          <div className={styles.previewContainer}>
+          <Lazyload
+            className={styles.previewContainer}
+            offset={100}
+            once
+            debounce={200}
+            placeholder={<Placeholder />}
+          >
             {preview.map((img, i) => <img className={styles.image} src={img} alt={`${title} preview ${i + 1}`} key={i} />)}
-          </div>
+          </Lazyload>
         </div>
       </div>
     </div>
