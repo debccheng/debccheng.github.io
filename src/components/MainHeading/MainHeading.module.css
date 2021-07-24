@@ -1,0 +1,67 @@
+.headingWrapper {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  margin: -15px 250px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #eee;
+  border: 3px solid #000;
+  border-radius:  2% 4% 1% 3% / 1% 2% 2% 3%;
+  animation: fadeIn 2s ease-in;
+}
+
+.headingWrapper::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 1% 2% 2% 3% / 2% 4% 1% 3%;
+  border: 1px solid #000;
+  transform: translate(-50%, -49%) scale(1.02) rotate(-1deg);
+  animation: fadeIn 2s ease-in;
+}
+
+
+.headingTitle {
+  font-family: 'Gloria Hallelujah';
+  margin: 50px 0 0;
+  font-size: 36px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+  letter-spacing: 5px;
+}
+
+.subGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.subTitle {
+  font-family: 'Gloria Hallelujah';
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.divider {
+  font-family: 'Gloria Hallelujah';
+  font-size: 18px;
+  padding-inline: 12px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
+}

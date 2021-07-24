@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
-import SelfPortrait from './components/SelfPortrait';
+import SelfPortrait from './components/SelfPortrait/SelfPortrait';
+import MainHeading from './components/MainHeading/MainHeading';
 
 function App() {
   return (
     <div className="App">
       <SelfPortrait />
-      <section className="main-section">
-        <h1 className="main-heading">Deb.</h1>
-      </section>
+      <MainHeading />
     </div>
   );
 }
