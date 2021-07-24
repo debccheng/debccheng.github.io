@@ -1,28 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SelfPortrait from './components/SelfPortrait';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <SelfPortrait />
+      <section className="main-section">
+        <h1 className="main-heading">Deb.</h1>
+      </section>
     </div>
   );
 }
