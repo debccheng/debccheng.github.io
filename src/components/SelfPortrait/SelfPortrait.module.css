@@ -59,13 +59,10 @@
 
 @keyframes lightFade {
   0%, 100% {
-    opacity: 0.25;
-  }
-  33%, 66% {
     opacity: 0.1;
   }
-  25%, 50%, 75% {
-    opacity: 0.3;
+  33% {
+    opacity: 0.15;
   }
 }
 
