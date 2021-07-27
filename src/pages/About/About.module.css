@@ -1,0 +1,48 @@
+.headingTitle {
+  font-family: 'Gloria Hallelujah', monospace;
+  margin: 20px 0 0;
+  font-size: 36px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.subGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.subTitle {
+  font-family: 'Gloria Hallelujah', monospace;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.divider {
+  font-family: 'Gloria Hallelujah', monospace;
+  font-size: 14px;
+  padding-inline: 10px;
+}
+
+.listGroup {
+  margin: 0px 36px 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.listItem {
+  list-style-type: '\2022';
+  padding: 5px 10px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 10px;
+}
+
+.highlight {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+.highlight:hover, .highlight:active {
+  background-color: turquoise;
+}

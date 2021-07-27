@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import styles from './SelfPortrait.module.css';
 import { ReactComponent as Laptop } from '../../assets/laptop.svg';
 import { ReactComponent as LaptopLight } from '../../assets/light.svg';
-// import { ReactComponent as PharmacistCoat } from '../assets/pharmacist.svg';
+// import { ReactComponent as PharmacistCoat } from '../../assets/pharmacist.svg';
 
 const SelfPortrait: FC = () => {
   const [show, setShow] = useState(false);

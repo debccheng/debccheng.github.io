@@ -1,12 +1,12 @@
 
 
 .svgWrapper {
-  margin: 50px auto 0;
+  margin: 45px auto 0;
 }
 
 .selfPortrait {
   animation: fadeIn 2s ease-in;
-  width: 200px;
+  width: 180px;
   transform: rotate(2deg);
 }
 
@@ -33,22 +33,22 @@
 .pharmacistCoat {
   transform: rotate(2deg);
   position: absolute;
-  top: -65px;
-  left: calc(50% - 100px);
+  top: -58px;
+  left: calc(50% - 90px);
 }
 
 .laptop {
   animation: slideInFromLeft 1s cubic-bezier(0.215, 0.610, 0.355, 1);
   position: absolute;
-  top: 180px;
-  left: calc(50% - 80px);
+  top: 162px;
+  left: calc(50% - 70px);
   z-index: 1;
 }
 
 .light {
   position: absolute;
-  top: 22px;
-  left: calc(50% - 103px);
+  top: 20px;
+  left: calc(50% - 90px);
   fill: rgba(64, 224, 208);
   opacity: 0;
   mix-blend-mode: lighten;
@@ -91,6 +91,6 @@
     left: -100px;
   }
   to {
-    left: calc(50% - 80px);
+    left: calc(50% - 70px);
   }
 }

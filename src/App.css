@@ -13,9 +13,9 @@ html, body, #root {
 
 .main-wrapper {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   position: relative;
-  margin: -15px 250px 50px;
+  margin: -15px 225px 45px;
   padding-block: 15px;
   display: flex;
   flex-direction: column;
