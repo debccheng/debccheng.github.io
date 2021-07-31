@@ -31,11 +31,31 @@ const Home: FC = () => (
         Completed Graduate Certificate of Computing at UNSW in Dec. 2020.
       </li>
       <li className={styles.listItem}>
-        Began my programming journey by self-learning JavaScript & TypeScript.
+        Started this programming journey by self-learning JavaScript & TypeScript.
+      </li>
+      <li className={styles.listItem}>
+        Likes making (not necessarily useful) things.
       </li>
     </ul>
     <div className={styles.subGroup}>
-      <button className={styles.aboutButton} type="button">TechStack</button>
+      <button
+        className={`${styles.highlight} ${styles.aboutButton}`}
+        type="button"
+      >
+        Tech stack
+      </button>
+      <button
+        className={`${styles.highlight} ${styles.aboutButton}`}
+        type="button"
+      >
+        Coffee rec
+      </button>
+      <button
+        className={`${styles.highlight} ${styles.aboutButton}`}
+        type="button"
+      >
+        Cat pics
+      </button>
     </div>
   </section>
 );

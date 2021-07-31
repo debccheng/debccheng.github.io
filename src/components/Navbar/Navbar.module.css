@@ -49,10 +49,13 @@
 
 .linkButton:hover {
   cursor: pointer;
+  color: #93E9BE;
+  border-color: #93E9BE;
+  box-shadow: 0 4px 0 #93E9BE;
 }
 
 .linkButton:active {
   top: 4px;
   padding-block-end: 1px;
-  box-shadow: 0 1px 0 #eee;
+  box-shadow: 0 1px 0 #93E9BE;
 }

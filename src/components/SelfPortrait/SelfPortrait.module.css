@@ -1,7 +1,7 @@
 
 
 .svgWrapper {
-  margin: 48px auto 0;
+  margin: 8px auto 0;
 }
 
 .selfPortrait {
@@ -33,23 +33,23 @@
 .pharmacistCoat {
   transform: rotate(2deg);
   position: absolute;
-  top: -58px;
+  top: -95px;
   left: calc(50% - 90px);
 }
 
 .laptop {
   animation: slideInFromLeft 1s cubic-bezier(0.215, 0.610, 0.355, 1);
   position: absolute;
-  top: 162px;
+  top: 122px;
   left: calc(50% - 70px);
   z-index: 1;
 }
 
 .light {
   position: absolute;
-  top: 20px;
+  top: -20px;
   left: calc(50% - 90px);
-  fill: rgba(64, 224, 208);
+  fill: #93E9BE;
   opacity: 0;
   mix-blend-mode: lighten;
   z-index: 2;
