@@ -1,8 +1,10 @@
+@import '../../styles/constants.css';
+
 .navbar {
   position: relative;
   height: 36px;
   margin-block-start: 24px;
-  background: #000;
+  background: var(--black);
   border-radius:  3% 2% 2% 1% / 4% 3% 2% 1%;
   padding: 8px 8px 16px;
 }
@@ -15,7 +17,7 @@
   top: 50%;
   left: 50%;
   border-radius: 1% 4% 2% 3% / 4% 1% 1% 3%;
-  border: 1px solid #000;
+  border: 1px solid var(--black);
   transform: translate(-50%, -50%) scale(1.02) rotate(1deg);
   pointer-events: none;
 }
@@ -37,25 +39,25 @@
   font-size: 16px;
   font-family: 'Gloria Hallelujah', sans-serif;
   text-decoration: none;
-  color: #eee;
+  color: var(--offwhite);
   position: relative;
   padding: 0 8px 4px;
-  border: 2px solid #eee;
+  border: 2px solid var(--offwhite);
   border-radius: 4px;
-  box-shadow: 0 2px 0 #eee;
+  box-shadow: 0 2px 0 var(--offwhite);
   transition: padding 0.1s, box-shadow 0.1s, top 0.1s;
   background: transparent;
 }
 
 .linkButton:hover {
   cursor: pointer;
-  color: #93E9BE;
-  border-color: #93E9BE;
-  box-shadow: 0 4px 0 #93E9BE;
+  color: var(--seafoam);
+  border-color: var(--seafoam);
+  box-shadow: 0 4px 0 var(--seafoam);
 }
 
 .linkButton:active {
   top: 4px;
   padding-block-end: 1px;
-  box-shadow: 0 1px 0 #93E9BE;
+  box-shadow: 0 1px 0 var(--seafoam);
 }
