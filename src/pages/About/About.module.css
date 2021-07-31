@@ -65,3 +65,25 @@
   padding: 0;
   margin-inline: 8px;
 }
+
+@media screen and (max-width: 448px) {
+  .headingTitle {
+    font-size: 28px;
+  }
+
+  .subGroup {
+    font-size: 12px;
+    margin-block-end: 16px;
+  }
+
+  .divider {
+    padding-inline: 4px;
+  }
+
+  .listGroup {
+    margin: 0px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 16px;
+  }
+}

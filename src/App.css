@@ -43,5 +43,6 @@ html, body, #root {
 @media screen and (max-width: 448px) {
   .main-wrapper {
     width: calc(100% - 64px);
+    padding-inline: 8px;
   }
 }
