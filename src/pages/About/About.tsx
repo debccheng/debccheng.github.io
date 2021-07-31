@@ -15,9 +15,8 @@ const Home: FC = () => (
     </div>
     <ul className={styles.listGroup}>
       <li className={styles.listItem}>
-        Transitioned to web dev from pharmacy in 2021.
-        Currently working full-time at
-        {' '}
+        {'Transitioned to web dev from pharmacy in 2021.\
+        Currently working full-time at '}
         <a
           className={styles.highlight}
           href="https://www.oneflare.com.au/"
@@ -32,11 +31,11 @@ const Home: FC = () => (
         Completed Graduate Certificate of Computing at UNSW in Dec. 2020.
       </li>
       <li className={styles.listItem}>
-        Began my programming journey by self-learning JavaScript and TypeScript.
+        Began my programming journey by self-learning JavaScript & TypeScript.
       </li>
     </ul>
     <div className={styles.subGroup}>
-      <h2 className={styles.subTitle}>TechStack</h2>
+      <button className={styles.aboutButton} type="button">TechStack</button>
     </div>
   </section>
 );

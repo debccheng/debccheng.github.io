@@ -13,12 +13,12 @@ const Navbar: FC = () => (
     <nav className={styles.navbar}>
       <ul className={styles.navGroup}>
         <li className={styles.navList}>
-          <Link to="/" className={styles.linkButton} type="button">
+          <Link to="/" className={styles.linkButton}>
             About
           </Link>
         </li>
         <li className={styles.navList}>
-          <Link to="/portfolio" className={styles.linkButton} type="button">
+          <Link to="/portfolio" className={styles.linkButton}>
             Portfolio
           </Link>
         </li>
