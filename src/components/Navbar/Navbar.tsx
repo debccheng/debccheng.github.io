@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import About from '../../pages/About/About';
+import Portfolio from '../../pages/Portfolio/Portfolio';
 
 const Navbar: FC = () => (
   <Router>
@@ -28,7 +29,9 @@ const Navbar: FC = () => (
       <Route exact path="/">
         <About />
       </Route>
-      <Route path="/portfolio" />
+      <Route path="/portfolio">
+        <Portfolio />
+      </Route>
     </Switch>
   </Router>
 );
