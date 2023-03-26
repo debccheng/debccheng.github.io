@@ -19,13 +19,19 @@ const Home: FC = () => (
         Currently working full-time at '}
         <a
           className={styles.highlight}
-          href="https://www.oneflare.com.au/"
+          href="https://www.edapp.com/"
           target="_blank"
           rel="noreferrer"
         >
-          Oneflare
+          EdApp
         </a>
         .
+      </li>
+      <li className={styles.listItem}>
+        <span className={styles.emphasise}>Tech stack:</span>
+        {' '}
+        TypeScript, React, styled-components, Redux-Saga, Cordova,
+        Storybook, React-Testing-Library, GraphQL, Cypress, Next.js
       </li>
       <li className={styles.listItem}>
         Completed Graduate Certificate of Computing at UNSW in Dec. 2020.
@@ -34,10 +40,10 @@ const Home: FC = () => (
         Started this programming journey by self-learning JavaScript & TypeScript.
       </li>
       <li className={styles.listItem}>
-        Likes making (not necessarily useful) things.
+        I enjoy all things visual -- both as an audience and as a contributor.
       </li>
     </ul>
-    <div className={styles.subGroup}>
+    {/* <div className={styles.subGroup}>
       <button
         className={`${styles.highlight} ${styles.aboutButton}`}
         type="button"
@@ -56,7 +62,7 @@ const Home: FC = () => (
       >
         Cat pics
       </button>
-    </div>
+    </div> */}
   </section>
 );
 
